@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Pixel Ads - Marketing para Cidades FiveM</title>
+
+<style>
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family: 'Montserrat', sans-serif;
+}
+
+body{
+background:#000;
+color:#fff;
+}
+
+/* HEADER */
+header{
+padding:20px 10%;
+display:flex;
+justify-content:space-between;
+align-items:center;
+background:#0000;
+position:fixed;
+width:100%;
+top:0;
+z-index:1000;
+}
+
+/* LOGO */
+.logo img{
+height:45px;
+width:auto;
+display:block;
+transition:0.3s;
+}
+
+.logo img:hover{
+transform:scale(1.05);
+}
+
+nav a{
+color:#fff;
+text-decoration:none;
+margin-left:20px;
+font-weight:600;
+}
+
+/* HERO */
+.hero{
+height:100vh;
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center;
+text-align:center;
+padding:20px;
+margin-top:80px;
+}
+
+.hero h2{
+font-size:40px;
+margin-bottom:20px;
+}
+
+.hero p{
+max-width:600px;
+margin-bottom:30px;
+color:#ccc;
+}
+
+.btn{
+padding:15px 30px;
+background:#ff0000;
+border:none;
+color:#fff;
+font-weight:bold;
+cursor:pointer;
+border-radius:8px;
+transition:0.3s;
+}
+
+.btn:hover{
+background:#cc0000;
+transform:scale(1.05);
+}
+
+/* PLANOS */
+.section{
+padding:80px 10%;
+text-align:center;
+}
+
+.cards{
+display:flex;
+gap:30px;
+flex-wrap:wrap;
+justify-content:center;
+margin-top:40px;
+}
+
+.card{
+background:#f4f4f4;
+padding:30px;
+width:300px;
+border-radius:14px;
+transition:0.3s;
+border:1px solid #2a2a2a;
+color:#000;
+}
+
+.card:hover{
+transform:translateY(-10px);
+}
+
+.card h3{
+margin-bottom:10px;
+}
+
+.price{
+font-size:28px;
+color:#ff0000;
+margin-bottom:15px;
+}
+
+.card ul{
+list-style:none;
+margin-bottom:20px;
+}
+
+.card ul li{
+margin-bottom:8px;
+color:#333;
+}
+
+.card button{
+width:100%;
+padding:12px;
+background:#ff0000;
+border:none;
+color:#fff;
+font-weight:bold;
+border-radius:8px;
+cursor:pointer;
+}
+
+.card button:hover{
+background:#cc0000;
+}
+
+/* FAQ */
+.faq-container{
+max-width:760px;
+margin:60px auto 0;
+}
+
+.faq-item{
+background:#1e1e1e;
+border-radius:14px;
+margin-bottom:16px;
+border:1px solid #2a2a2a;
+overflow:hidden;
+}
+
+.faq-question{
+width:100%;
+background:none;
+border:none;
+color:#fff;
+text-align:left;
+padding:20px;
+font-size:1rem;
+font-weight:600;
+cursor:pointer;
+display:flex;
+justify-content:space-between;
+}
+
+.faq-answer{
+max-height:0;
+overflow:hidden;
+opacity:0;
+padding:0 20px;
+background:#151515;
+color:#ccc;
+transition:0.4s;
+}
+
+.faq-item.active .faq-answer{
+padding:16px 20px;
+max-height:400px;
+opacity:1;
+}
+
+footer{
+padding:30px;
+text-align:center;
+background:#000000;
+color:#777;
+margin-top:60px;
+}
+
+@media(max-width:768px){
+.hero h2{font-size:28px;}
+.cards{flex-direction:column;align-items:center;}
+}
+</style>
+</head>
+
+<body>
+
+<header>
+<div class="logo">
+  <img src="logo.png" alt="Pixel Ads Logo">
+</div>
+
+<nav>
+<a href="#">Início</a>
+<a href="#planos">Planos</a>
+<a href="#faq">FAQ</a>
+</nav>
+</header>
+
+<section class="hero">
+<h2>Marketing Estratégico para Cidades FiveM</h2>
+<p>Campanhas profissionais para atrair jogadores qualificados e fortalecer sua cidade.</p>
+<button class="btn" onclick="scrollToPlanos()">Ver Planos</button>
+</section>
+
+<section class="section" id="planos">
+<h2>Nossos Planos</h2>
+<div class="cards">
+
+<div class="card">
+<div class="price">R$ 300,00</div>
+<h3>Standard</h3>
+<ul>
+<li>✓ Edição profissional</li>
+<li>✓ Segmentação precisa</li>
+<li>✓ Até 3 dias de campanhas</li>
+<li>✓ Vídeo exclusivo</li>
+</ul>
+<button onclick="whats('Standard')">Escolher Pacote</button>
+</div>
+
+<div class="card">
+<div class="price">R$ 500,00</div>
+<h3>Premium</h3>
+<ul>
+<li>✓ Edição profissional</li>
+<li>✓ Segmentação avançada</li>
+<li>✓ Até 7 dias de campanhas</li>
+<li>✓ Dois vídeos exclusivos</li>
+<li>✓ Qualificação rápida</li>
+</ul>
+<button onclick="whats('Premium')">Escolher Pacote</button>
+</div>
+
+</div>
+</section>
+
+<section class="section" id="faq">
+<h2>Perguntas Frequentes</h2>
+
+<div class="faq-container">
+
+<div class="faq-item">
+<button class="faq-question">
+O que é a Pixel Ads?
+<span>+</span>
+</button>
+<div class="faq-answer">
+Somos especialistas em marketing para cidades FiveM, focados em crescimento real e qualificado.
+</div>
+</div>
+
+<div class="faq-item">
+<button class="faq-question">
+Quais tipos de serviços a Pixel Ads oferece?
+<span>+</span>
+</button>
+<div class="faq-answer">
+Oferecemos divulgação completa para sua cidade FiveM, com campanhas estratégicas e segmentadas.
+</div>
+</div>
+
+<div class="faq-item">
+<button class="faq-question">
+Por que investir em marketing para uma cidade FiveM?
+<span>+</span>
+</button>
+<div class="faq-answer">
+Porque o marketing certo faz toda a diferença. Com campanhas bem direcionadas, sua cidade atrai jogadores ativos e de qualidade, fortalecendo o crescimento e o reconhecimento do servidor.
+</div>
+</div>
+
+<div class="faq-item">
+<button class="faq-question">
+O que diferencia a Pixel Ads das outras agências?
+<span>+</span>
+</button>
+<div class="faq-answer">
+Nosso diferencial é entender o universo do FiveM a fundo. Não fazemos marketing genérico; criamos estratégias personalizadas para cada tipo de cidade (Roleplay, Academy, etc.).
+</div>
+</div>
+
+<div class="faq-item">
+<button class="faq-question">
+Como a Pixel Ads ajuda na qualificação de jogadores?
+<span>+</span>
+</button>
+<div class="faq-answer">
+Através da Pixel Ads, capacitamos novos jogadores com noções básicas e avançadas de roleplay, melhorando a experiência dentro das cidades e fortalecendo a comunidade.
+</div>
+</div>
+
+</div>
+</section>
+
+<footer>
+© 2026 Pixel Ads - Todos os direitos reservados
+</footer>
+
+<script>
+function scrollToPlanos(){
+document.getElementById('planos').scrollIntoView({behavior:'smooth'});
+}
+
+function whats(plano){
+const numero = "5511955793218";
+const mensagem = `Olá, gostaria de saber mais sobre o plano ${plano}.`;
+const url = `https://wa.me/${numero}?text=${encodeURIComponent(mensagem)}`;
+window.open(url, "_blank");
+}
+
+document.querySelectorAll('.faq-question').forEach(question=>{
+question.addEventListener('click',()=>{
+const item = question.closest('.faq-item');
+item.classList.toggle('active');
+});
+});
+</script>
+
+</body>
+</html>
