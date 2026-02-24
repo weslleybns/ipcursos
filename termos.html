@@ -97,7 +97,42 @@ text-align:center;
 background:#000;
 color:#777;
 margin-top:60px;
-border-top:1px solid #1a1a1a;
+}
+
+.footer-social{
+margin-bottom:25px;
+}
+
+.footer-social h3{
+color:#fff;
+margin-bottom:20px;
+}
+
+.social-icons{
+display:flex;
+justify-content:center;
+gap:25px;
+margin-bottom:20px;
+}
+
+.social-icons a{
+width:50px;
+height:50px;
+display:flex;
+align-items:center;
+justify-content:center;
+background:#111;
+border-radius:50%;
+color:#fff;
+font-size:22px;
+transition:0.3s;
+border:1px solid #2a2a2a;
+}
+
+.social-icons a:hover{
+background:#ff0000;
+transform:translateY(-6px);
+box-shadow:0 10px 25px rgba(255,0,0,0.5);
 }
 
 @media(max-width:768px){
@@ -105,6 +140,7 @@ border-top:1px solid #1a1a1a;
 }
 </style>
 </head>
+
 
 <body>
 
@@ -183,8 +219,17 @@ ou redes sociais oficiais.
 <hr style="border: none; height: 2px; background: linear-gradient(to right, #ff0000, #ffffff1a); margin: 20px 0; border-radius: 2px;">
 
 <footer>
+<div class="footer-social">
+<h3>Nossas redes</h3>
+<div class="social-icons">
+<a href="https://instagram.com/pixeladsgg"><i class="fab fa-instagram"></i></a>
+<a href="https://tiktok.com/@pixeladsgg"><i class="fab fa-tiktok"></i></a>
+<a href="https://wa.me/5511955793218"><i class="fab fa-whatsapp"></i></a>
+</div>
+</div>
 © 2026 Pixel Ads - Todos os direitos reservados
 </footer>
+
 
 </body>
 </html>
