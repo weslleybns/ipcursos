@@ -5,11 +5,14 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Pixel Ads</title>
 
+<!-- FONT AWESOME -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
 <style>
 *{margin:0;padding:0;box-sizing:border-box;font-family:'Montserrat',sans-serif;}
 body{background:#000;color:#fff;overflow-x:hidden;}
 
-/* HEADER */
+/* CABEÇALHO */
 header{
 padding:20px 10%;
 display:flex;
@@ -19,7 +22,7 @@ position:fixed;
 width:100%;
 top:0;
 z-index:1000;
-background:#000000;
+background:#000;
 backdrop-filter:blur(6px);
 }
 
@@ -60,7 +63,7 @@ align-items:center;
 text-align:center;
 padding:20px;
 margin-top:80px;
-background:linear-gradient(to bottom,#000000,#000000);
+background:linear-gradient(to bottom,#000,#000);
 }
 
 .hero h2{font-size:42px;margin-bottom:20px;}
@@ -123,7 +126,7 @@ border-radius:50px;
 cursor:pointer;
 }
 
-/* RESULTADOS */
+/* FEEDBACKS */
 .feedback-wrapper{
 display:flex;
 justify-content:center;
@@ -222,12 +225,49 @@ max-height:400px;
 opacity:1;
 }
 
+/* FOOTER */
 footer{
 padding:40px;
 text-align:center;
 background:#000;
 color:#777;
 margin-top:60px;
+}
+
+.footer-social{
+margin-bottom:25px;
+}
+
+.footer-social h3{
+color:#fff;
+margin-bottom:20px;
+}
+
+.social-icons{
+display:flex;
+justify-content:center;
+gap:25px;
+margin-bottom:20px;
+}
+
+.social-icons a{
+width:50px;
+height:50px;
+display:flex;
+align-items:center;
+justify-content:center;
+background:#111;
+border-radius:50%;
+color:#fff;
+font-size:22px;
+transition:0.3s;
+border:1px solid #2a2a2a;
+}
+
+.social-icons a:hover{
+background:#ff0000;
+transform:translateY(-6px);
+box-shadow:0 10px 25px rgba(255,0,0,0.5);
 }
 
 @media(max-width:768px){
@@ -257,6 +297,7 @@ margin-top:60px;
 <button class="btn" onclick="scrollToPlanos()">Ver Planos</button>
 </section>
 
+<!-- PLANOS -->
 <section class="section" id="planos">
 <h2>Nossos Planos</h2>
 <div class="cards">
@@ -288,10 +329,9 @@ margin-top:60px;
 </div>
 </section>
 
-<!-- RESULTADOS -->
+<!-- FEEDBACKS -->
 <section class="section">
 <h2>Feedbacks</h2>
-
 <div class="feedback-wrapper">
 
 <div class="feedback-section">
@@ -300,13 +340,12 @@ margin-top:60px;
 <p>A descrição do feedback aqui</p>
 <div class="testimonial-footer">
 <div class="user-info">
-<p>Usário</p>
+<p>Usuário</p>
 <p>Cidade</p>
 </div>
 <div class="quote">❝</div>
 </div>
 </div>
-
 <div class="testimonial-card">
 <div class="stars">★★★★★</div>
 <p>A descrição do feedback aqui</p>
@@ -332,7 +371,6 @@ margin-top:60px;
 <div class="quote">❝</div>
 </div>
 </div>
-
 <div class="testimonial-card">
 <div class="stars">★★★★★</div>
 <p>A descrição do feedback aqui</p>
@@ -352,7 +390,6 @@ margin-top:60px;
 <!-- FAQ -->
 <section class="section" id="faq">
 <h2>Perguntas Frequentes</h2>
-
 <div class="faq-container">
 
 <div class="faq-item">
@@ -377,42 +414,29 @@ Os primeiros resultados normalmente aparecem entre 24 e 72 horas.
 
 <div class="faq-item">
 <button class="faq-question">
-Em quanto tempo vejo resultados?
+Como funciona a contratação?
 <span>+</span>
 </button>
 <div class="faq-answer">
-Os primeiros resultados normalmente aparecem entre 24 e 72 horas.
-</div>
-</div>
-
-<div class="faq-item">
-<button class="faq-question">
-Em quanto tempo vejo resultados?
-<span>+</span>
-</button>
-<div class="faq-answer">
-Os primeiros resultados normalmente aparecem entre 24 e 72 horas.
-</div>
-</div>
-
-<div class="faq-item">
-<button class="faq-question">
-Em quanto tempo vejo resultados?
-<span>+</span>
-</button>
-<div class="faq-answer">
-Os primeiros resultados normalmente aparecem entre 24 e 72 horas.
+Você escolhe o plano e entra em contato via WhatsApp para fechar.
 </div>
 </div>
 
 </div>
 </section>
 
-
-
 <hr style="border: none; height: 2px; background: linear-gradient(to right, #ff0000, #ffffff1a); margin: 20px 0; border-radius: 2px;">
 
+<!-- FOOTER -->
 <footer>
+<div class="footer-social">
+<h3>Siga a Pixel Ads</h3>
+<div class="social-icons">
+<a href="#"><i class="fab fa-instagram"></i></a>
+<a href="#"><i class="fab fa-tiktok"></i></a>
+<a href="https://wa.me/5511955793218"><i class="fab fa-whatsapp"></i></a>
+</div>
+</div>
 © 2026 Pixel Ads - Todos os direitos reservados
 </footer>
 
@@ -427,12 +451,14 @@ const mensagem=`Olá, gostaria de saber mais sobre o plano ${plano}.`;
 window.open(`https://wa.me/${numero}?text=${encodeURIComponent(mensagem)}`,"_blank");
 }
 
+// FAQ toggle
 document.querySelectorAll('.faq-question').forEach(q=>{
 q.addEventListener('click',()=>{
 q.closest('.faq-item').classList.toggle('active');
 });
 });
- 
+
+// Feedback auto-rotate
 const feedbackSections=document.querySelectorAll('.feedback-section');
 feedbackSections.forEach(section=>{
 const cards=section.querySelectorAll('.testimonial-card');
