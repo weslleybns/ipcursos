@@ -451,7 +451,7 @@ box-shadow:0 5px 20px rgba(0,0,0,0.5);
     height:220px;
     object-fit:cover;
     display:block;
-    transition:0.4s ease;
+    transition:1.0s ease;
 }
 
 .insight-card:hover .insight-img{
@@ -481,7 +481,7 @@ box-shadow:0 5px 20px rgba(0,0,0,0.5);
     background:#fd1212;
     border-radius:8px;
     text-decoration:none;
-    font-size:13px;
+    font-size:15px;
     color:#fff;
     transition:0.3s;
 }
@@ -749,3 +749,4 @@ section,
   opacity: 1;
   transform: scale(1.05);
 }
+
