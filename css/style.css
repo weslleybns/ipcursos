@@ -136,7 +136,7 @@ header {
   width: 100%;
   top: 0;
   z-index: 1000;
-  background: rgba(0, 0, 0, 0.85);
+  background: rgba(0, 0, 0, 0.096);
   backdrop-filter: blur(6px);
 }
 
