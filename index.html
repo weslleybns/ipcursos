@@ -1,286 +1,412 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Pixel Ads</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pixel Ads</title>
 
-<link rel="icon" href="assets/icon.png" type="image/png">
-<link rel="shortcut icon" href="assets/icon.png" type="image/png">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="icon" href="assets/icon.png" type="image/png">
+  <link rel="shortcut icon" href="assets/icon.png" type="image/png">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="css/style.css">
 
-<link rel="stylesheet" href="css/style.css">
+  <!-- Open Graph / WhatsApp Preview -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://weslleybns.github.io/pixelads">
+  <meta property="og:title" content="Pixel Ads - Agência de Marketing Digital">
+  <meta property="og:description" content="Levando e qualificando jogadores para sua cidade.">
+  <meta property="og:image" content="https://cdn.discordapp.com/attachments/1266193008064204801/1476779243651469442/banner.png?ex=69a25d58&is=69a10bd8&hm=206349fa35e61b9b8e189f23b4ef191228522708193560335a54d6ce75f601f6">
+  <meta property="og:site_name" content="Pixel Ads">
 
-<!-- Open Graph / WhatsApp Preview -->
-<meta property="og:type" content="website">
-<meta property="og:url" content="https://weslleybns.github.io/pixelads">
-<meta property="og:title" content="Pixel Ads - Agência de Marketing Digital">
-<meta property="og:description" content="Levando e qualificando jogadores para sua cidade.">
-<meta property="og:image" content="https://cdn.discordapp.com/attachments/1266193008064204801/1476779243651469442/banner.png?ex=69a25d58&is=69a10bd8&hm=206349fa35e61b9b8e189f23b4ef191228522708193560335a54d6ce75f601f6">
-
-<!-- Opcional (melhora compatibilidade) -->
-<meta property="og:site_name" content="Pixel Ads">
-
-<!-- Twitter (ajuda alguns apps) -->
-<meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="Pixel Ads - Agência de Marketing Digital">
-<meta name="twitter:description" content="Levando e qualificando jogadores para sua cidade.">
-<meta name="twitter:image" content="https://cdn.discordapp.com/attachments/1266193008064204801/1476779243651469442/banner.png?ex=69a25d58&is=69a10bd8&hm=206349fa35e61b9b8e189f23b4ef191228522708193560335a54d6ce75f601f6">
-
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Pixel Ads - Agência de Marketing Digital">
+  <meta name="twitter:description" content="Levando e qualificando jogadores para sua cidade.">
+  <meta name="twitter:image" content="https://cdn.discordapp.com/attachments/1266193008064204801/1476779243651469442/banner.png?ex=69a25d58&is=69a10bd8&hm=206349fa35e61b9b8e189f23b4ef191228522708193560335a54d6ce75f601f6">
 </head>
 <body>
-    
-<header>
-<div class="logo">
-<img src="assets/logo.png" alt="Pixel Ads Logo">
-</div>
-<nav>
-<a href="planos.html">Planos</a>
-<a href="termos.html">Termos</a>
-<a href="#parceiros">Parceiros</a>
-</nav>
-</header>
 
-<section class="hero">
-  <h2>Mais jogadores para sua cidade</h2>
-  <p>Fazemos campanhas profissionais para atrair jogadores qualificados e fortalecer sua cidade.</p>
-  
-  <a href="planos.html" class="btn">Ver Planos</a>
-</section>
-
-<section class="prova-social">
-  <div class="container">
-    <h2>
-      + de 100 cidades já <br>
-      tomaram essa decisão
-    </h2>
-
-    <div class="logos">
-      <img src="assets/GUARULHOS.png" alt="Guarulhos">
-      <img src="assets/B.png" alt="Brooken">
-      <img src="assets/SYNER.png" alt="SYNER">
-    </div>
+  <!-- LOADING SCREEN -->
+  <div id="loader">
+    <img src="assets/logo.png" alt="Pixel Ads">
+    <div class="loader-bar"><div class="loader-fill"></div></div>
   </div>
-</section>
 
-<section class="xp-dashboard">
+  <!-- VIDEO DE FUNDO -->
+  <video autoplay muted loop playsinline class="bg-video">
+    <source src="video.mp4" type="video/mp4">
+  </video>
 
-    <div class="xp-logo">
-        <h2>Análises <span>Recentes</span></h2>
+  <header>
+    <div class="logo">
+      <img src="assets/logo.png" alt="Pixel Ads Logo">
+    </div>
+    <nav>
+      <a href="planos.html">Planos</a>
+      <a href="termos.html">Termos</a>
+      <a href="#parceiros">Parceiros</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h2>Mais jogadores para sua cidade</h2>
+    <p>Fazemos campanhas profissionais para atrair jogadores qualificados e fortalecer sua cidade.</p>
+    <a href="planos.html" class="btn">Ver Planos</a>
+  </section>
+
+  <section class="prova-social">
+    <div class="container">
+      <h2>
+        + de 100 cidades já <br>
+        tomaram essa decisão
+      </h2>
+      <div class="logos">
+        <img src="assets/GUARULHOS.png" alt="Guarulhos">
+        <img src="assets/B.png" alt="Brooken">
+        <img src="assets/SYNER.png" alt="SYNER">
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTADORES -->
+  <section class="contadores">
+    <div class="contador-item">
+      <span class="contador-num" data-target="100">0</span><span class="contador-sufixo">+</span>
+      <p>Cidades atendidas</p>
+    </div>
+    <div class="contador-item">
+      <span class="contador-num" data-target="500">0</span><span class="contador-sufixo">k+</span>
+      <p>Jogadores alcançados</p>
+    </div>
+    <div class="contador-item">
+      <span class="contador-num" data-target="98">0</span><span class="contador-sufixo">%</span>
+      <p>Clientes satisfeitos</p>
+    </div>
+    <div class="contador-item">
+      <span class="contador-num" data-target="3">0</span><span class="contador-sufixo"> anos</span>
+      <p>de experiência</p>
+    </div>
+  </section>
+
+  <!-- DASHBOARD -->
+  <section class="dashboard">
+    <div class="dashboard-header">
+      <h2>Análises <span>Recentes</span></h2>
+      <p>Resultados reais das nossas campanhas</p>
     </div>
 
-    <div class="xp-metric">
-        <div class="xp-header">
-            <h2>Aumento na cidade</h2>
-            <span>48%</span>
+    <div class="dashboard-grid">
+
+      <!-- GRÁFICO DE BARRAS -->
+      <div class="dash-card dash-card--double">
+        <div class="dash-card-header">
+          <span class="dash-label">Cidades por Mês</span>
+          <span class="dash-value">47 cidades</span>
         </div>
-        <div class="xp-bar">
-            <div class="xp-progress" style="width: 48%;"></div>
+        <div style="position:relative; height:180px; width:100%;">
+          <canvas id="barChart"></canvas>
         </div>
-    </div>
 
-    <div class="xp-metric">
-        <div class="xp-header">
-            <h2>Jogadores alcançados</h2>
-            <span>62%</span>
+        <div class="dash-card-header" style="margin-top: 25px;">
+          <span class="dash-label">Campanhas Ativas</span>
+          <span class="dash-value">R$ 12k</span>
         </div>
-        <div class="xp-bar">
-            <div class="xp-progress" style="width: 62%;"></div>
+        <div style="position:relative; height:180px; width:100%;">
+          <canvas id="barChart2"></canvas>
         </div>
-    </div>
+      </div>
 
-    <div class="xp-metric">
-        <div class="xp-header">
-            <h2>Qualificação dos jogadores</h2>
-            <span>58%</span>
+      <!-- DONUTS EMPILHADOS -->
+      <div class="donuts-col">
+
+        <div class="dash-card dash-card--donut">
+          <span class="dash-label">Aumento na cidade</span>
+          <div class="donut-wrap">
+            <canvas id="donut1" width="150" height="150"></canvas>
+            <span class="donut-center">48%</span>
+          </div>
         </div>
-        <div class="xp-bar">
-            <div class="xp-progress" style="width: 58%;"></div>
+
+        <div class="dash-card dash-card--donut">
+          <span class="dash-label">Jogadores alcançados</span>
+          <div class="donut-wrap">
+            <canvas id="donut2" width="150" height="150"></canvas>
+            <span class="donut-center">62%</span>
+          </div>
         </div>
+
+      </div>
+
     </div>
+  </section>
 
-</section>
-
-<section class="aida-section" id="funil">
-  <h3 class="aida-title">Nosso Sistema de Captação</h3>
-
-  <div class="funil-container">
-
-    <div class="funil etapa1">
-      <span>ATENÇÃO</span>
-    </div>
-
-    <div class="funil etapa2">
-      <span>INTERESSE</span>
-    </div>
-
-    <div class="funil etapa3">
-      <span>DESEJO</span>
-    </div>
-
-    <div class="funil etapa4">
-      <span>AÇÃO</span>
-    </div>
-
-  </div>
-</section>
-
-<!-- ===== INSIGHTS SECTION ===== -->
-<section class="insights">
-
+  <!-- INSIGHTS -->
+  <section class="insights">
     <div class="insights-header">
-        <h2>Conheça nosso<span> Marketing</span></h2>
-        <p>
-            Seu servidor pode ter os melhores scripts, mapas próprios e
-            sistemas inovadores, mas sem visibilidade, tudo isso fica desperdiçado.
-        </p>
+      <h2>Conheça nosso<span> Marketing</span></h2>
+      <p>
+        Seu servidor pode ter os melhores scripts, mapas próprios e
+        sistemas inovadores, mas sem visibilidade, tudo isso fica desperdiçado.
+      </p>
     </div>
 
     <div class="insights-cards">
-
-        <div class="insight-card">
-            <img src="assets/GTA1.jpg" class="insight-img" alt="">
-            <div class="insight-content">
-                <div class="meta">Primeiro passo</div>
-                <h3>Estrutura - Análises gerais da sua cidade</h3>
-                <a href="estrutura.html">Saiba Mais</a>
-            </div>
+      <div class="insight-card">
+        <img src="assets/GTA1.jpg" class="insight-img" alt="Estrutura">
+        <div class="insight-content">
+          <div class="meta">Primeiro passo</div>
+          <h3>Estrutura - Análises gerais da sua cidade</h3>
+          <a href="estrutura.html">Saiba Mais</a>
         </div>
+      </div>
 
-        <div class="insight-card">
-            <img src="assets/gta2.jpg" class="insight-img" alt="">
-            <div class="insight-content">
-                <div class="meta">Segundo passo</div>
-                <h3>Criativos - Fazemos cinematics para aumentar a conversão</h3>
-                <a href="#">Saiba Mais</a>
-            </div>
+      <div class="insight-card">
+        <img src="assets/gta2.jpg" class="insight-img" alt="Criativos">
+        <div class="insight-content">
+          <div class="meta">Segundo passo</div>
+          <h3>Criativos - Fazemos cinematics para aumentar a conversão</h3>
+          <a href="#">Saiba Mais</a>
         </div>
+      </div>
 
-        <div class="insight-card">
-            <img src="assets/GTA3.png" class="insight-img" alt="">
-            <div class="insight-content">
-                <div class="meta">Terceiro passo</div>
-                <h3>Operação - Mais jogadores para sua cidade</h3>
-                <a href="#">Saiba Mais</a>
-            </div>
+      <div class="insight-card">
+        <img src="assets/GTA3.png" class="insight-img" alt="Operação">
+        <div class="insight-content">
+          <div class="meta">Terceiro passo</div>
+          <h3>Operação - Mais jogadores para sua cidade</h3>
+          <a href="#">Saiba Mais</a>
         </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="section" id="faq">
+    <h2>Perguntas Frequentes</h2>
+    <div class="faq-container">
+
+      <div class="faq-item">
+        <button class="faq-question">
+          O que é a Pixel Ads?
+          <span>+</span>
+        </button>
+        <div class="faq-answer">
+          A Pixel Ads é uma agência especializada em marketing voltado para cidades do FiveM, ajudando servidores a crescer e se destacar.
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question">
+          Por que investir em marketing para uma cidade FiveM?
+          <span>+</span>
+        </button>
+        <div class="faq-answer">
+          Porque o marketing certo faz toda a diferença, com campanhas bem
+          direcionadas, sua cidade atrai jogadores ativos e de qualidade, dessa
+          forma fortalecendo o crescimento e o reconhecimento do servidor.
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question">
+          O que diferencia a Pixel Ads das outras agências?
+          <span>+</span>
+        </button>
+        <div class="faq-answer">
+          Nosso diferencial é entender o universo do FiveM a fundo, não fazemos
+          marketing genérico, criamos estratégias personalizadas para cada tipo
+          de cidade (roleplay, academy, etc.)
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question">
+          Como a Pixel Ads ajuda na qualificação de jogadores?
+          <span>+</span>
+        </button>
+        <div class="faq-answer">
+          Através do Pixel Ads, capacitamos novos jogadores com noções básicas
+          e avançadas de roleplay, melhorando a experiência dentro das cidades.
+          Assim, além de atrair novos jogadores.
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question">
+          Como funciona a contratação?
+          <span>+</span>
+        </button>
+        <div class="faq-answer">
+          Você escolhe o plano e entra em contato via WhatsApp para darmos início.
+        </div>
+      </div>
 
     </div>
+  </section>
 
-</section>
-
-<!-- FAQ -->
-<section class="section" id="faq">
-<h3>Perguntas Frequentes</h3>
-<div class="faq-container">
-
-<div class="faq-item">
-<button class="faq-question">
-O que é a Pixel Ads?
-<span>+</span>
-</button>
-<div class="faq-answer">
-A Pixel Ads é uma agência especializada em marketing voltado para cidades do FiveM, ajudando servidores a crescer e se destacar.
-</div>
-</div>
-
-<div class="faq-item">
-<button class="faq-question">
-Por que investir em marketing para uma cidade FiveM?
-<span>+</span>
-</button>
-<div class="faq-answer">
-Porque o marketing certo faz toda a diferença, com campanhas bem
-direcionadas, sua cidade atrai jogadores ativos e de qualidade, dessa 
-forma fortalecendo o crescimento e o reconhecimento do servidor.
-</div>
-</div>
-
-<div class="faq-item">
-<button class="faq-question">
-O que diferencia a Pixel Ads das outras agências?
-<span>+</span>
-</button>
-<div class="faq-answer">
-Nosso diferencial é entender o universo do FiveM a fundo, não fazemos
-marketing genérico, criamos estratégias personalizadas para cada tipo
-de cidade (roleplay, academy, etc.)
-</div>
-</div>
-
-<div class="faq-item">
-<button class="faq-question">
-Como a Pixel Ads ajuda na qualificação de jogadores?
-<span>+</span>
-</button>
-<div class="faq-answer">
-Através do Pixel Ads, capacitamos novos jogadores com noções básicas 
-e avançadas de roleplay, melhorando a experiência dentro das cidades. 
-Assim, além de atrair novos jogadores.
-</div>
-</div>
-
-<div class="faq-item">
-<button class="faq-question">
-Como funciona a contratação?
-<span>+</span>
-</button>
-<div class="faq-answer">
-Você escolhe o plano e entra em contato via WhatsApp para darmos início.
-</div>
-</div>
-
-</div>
-</section>
-
-<section id="parceiros" class="parceiros">
-  <div class="parceiros-header">
-    <span class="parceiros-sub">Parcerias Selecionadas</span>
-    <p>Trabalhamos com foco e melhorando nossa visão de crescimento no FiveM</p>
-  </div>
-
-  <div class="parceiros-grid">
-    
-    <div class="parceiro-card">
-      <a href="https://discord.gg/mMATkrXYrK" target="_blank" rel="noopener noreferrer">
-        <img src="assets/ch.png" alt="Parceiro 1">
-      </a>
+  <!-- PARCEIROS -->
+  <section id="parceiros" class="parceiros">
+    <div class="parceiros-header">
+      <span class="parceiros-sub">Parcerias Selecionadas</span>
+      <p>Trabalhamos com foco e melhorando nossa visão de crescimento no FiveM</p>
     </div>
 
-    <div class="parceiro-card">
-      <a href="https://weslleybns.github.io/pixelads" target="_blank" rel="noopener noreferrer">
-        <img src="assets/logo.png" alt="Parceiro 2">
-      </a>
+    <div class="parceiros-grid">
+      <div class="parceiro-card">
+        <a href="https://discord.gg/mMATkrXYrK" target="_blank" rel="noopener noreferrer">
+          <img src="assets/ch.png" alt="Parceiro 1">
+        </a>
+      </div>
+
+      <div class="parceiro-card">
+        <a href="https://discord.gg/rQTQ8xzpPw" target="_blank" rel="noopener noreferrer">
+          <img src="assets/hyven.png" alt="Parceiro 2">
+        </a>
+      </div>
+
+      <div class="parceiro-card">
+        <a href="https://pixelads.squareweb.app" target="_blank" rel="noopener noreferrer">
+          <img src="assets/logo.png" alt="Parceiro 3">
+        </a>
+      </div>
     </div>
+  </section>
 
-    <div class="parceiro-card">
-      <a href="https://discord.gg/brookencitygg" target="_blank" rel="noopener noreferrer">
-        <img src="assets/brooken.png" alt="Parceiro 3">
-      </a>
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer-social">
+      <div class="social-icons">
+        <a href="https://instagram.com/pixeladsgg"><i class="fab fa-instagram"></i></a>
+        <a href="https://tiktok.com/@pixeladsgg"><i class="fab fa-tiktok"></i></a>
+        <a href="https://wa.me/5511955793218"><i class="fab fa-whatsapp"></i></a>
+      </div>
     </div>
+    © 2026 Pixel Ads - Todos os direitos reservados
+  </footer>
 
-  </div>
-</section>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.min.js"></script>
+  <script src="js/script.js"></script>
+  <script>
+    // LOADING SCREEN
+    window.addEventListener('load', () => {
+      const loader = document.getElementById('loader');
+      setTimeout(() => loader.classList.add('hidden'), 1800);
+    });
 
-<!-- FOOTER -->
-<footer>
-<div class="footer-social">
-<h3></h3>
-<div class="social-icons">
-<a href="https://instagram.com/pixeladsgg"><i class="fab fa-instagram"></i></a>
-<a href="https://tiktok.com/@pixeladsgg"><i class="fab fa-tiktok"></i></a>
-<a href="https://wa.me/5511955793218"><i class="fab fa-whatsapp"></i></a>
-</div>
-</div>
-© 2026 Pixel Ads - Todos os direitos reservados
-</footer>
+    // CONTADORES ANIMADOS
+    function animarContadores() {
+      document.querySelectorAll('.contador-num').forEach(num => {
+        const target = +num.dataset.target;
+        const step = target / (2000 / 16);
+        let current = 0;
+        const timer = setInterval(() => {
+          current += step;
+          if (current >= target) { current = target; clearInterval(timer); }
+          num.textContent = Math.floor(current);
+        }, 16);
+      });
+    }
 
-<script src="js/script.js"></script>
+    const contObs = new IntersectionObserver((entries) => {
+      entries.forEach(e => { if (e.isIntersecting) { animarContadores(); contObs.disconnect(); } });
+    }, { threshold: 0.3 });
+    contObs.observe(document.querySelector('.contadores'));
+
+    // GRÁFICOS
+    const chartDefaults = {
+      color: '#aaa',
+      plugins: { legend: { display: false } },
+      scales: {
+        x: { ticks: { color: '#aaa' }, grid: { color: '#1e1e1e' } },
+        y: { ticks: { color: '#aaa' }, grid: { color: '#1e1e1e' } }
+      }
+    };
+
+    // BARRAS
+    new Chart(document.getElementById('barChart'), {
+      type: 'bar',
+      data: {
+        labels: ['Jan', 'Fev', 'Mar', 'Abr', 'Mai', 'Jun'],
+        datasets: [{
+          data: [5, 9, 14, 22, 34, 47],
+          backgroundColor: [
+            'rgba(255,0,0,0.3)',
+            'rgba(255,0,0,0.4)',
+            'rgba(255,0,0,0.5)',
+            'rgba(255,0,0,0.6)',
+            'rgba(255,0,0,0.8)',
+            'rgba(255,0,0,1)',
+          ],
+          borderRadius: 8,
+          borderSkipped: false
+        }]
+      },
+      options: {
+        maintainAspectRatio: false,
+        plugins: { legend: { display: false } },
+        scales: {
+          x: { ticks: { color: '#aaa' }, grid: { color: '#1e1e1e' } },
+          y: { ticks: { color: '#aaa' }, grid: { color: '#1e1e1e' } }
+        }
+      }
+    });
+
+    // DONUTS
+    function criarDonut(id, valor) {
+      const canvas = document.getElementById(id);
+      canvas.style.width = '150px';
+      canvas.style.height = '150px';
+      new Chart(canvas, {
+        type: 'doughnut',
+        data: {
+          datasets: [{
+            data: [valor, 100 - valor],
+            backgroundColor: ['#ff0000', '#1e1e1e'],
+            borderWidth: 0,
+            borderRadius: 6
+          }]
+        },
+        options: {
+          cutout: '75%',
+          responsive: false,
+          maintainAspectRatio: false,
+          animation: { duration: 1000 },
+          plugins: { legend: { display: false }, tooltip: { enabled: false } }
+        }
+      });
+    }
+
+    // BARRAS 2
+    new Chart(document.getElementById('barChart2'), {
+      type: 'bar',
+      data: {
+        labels: ['Jan', 'Fev', 'Mar', 'Abr', 'Mai', 'Jun'],
+        datasets: [{
+          data: [1200, 3500, 5800, 7200, 9600, 12000],
+          backgroundColor: [
+            'rgba(255,0,0,0.3)',
+            'rgba(255,0,0,0.4)',
+            'rgba(255,0,0,0.5)',
+            'rgba(255,0,0,0.6)',
+            'rgba(255,0,0,0.8)',
+            'rgba(255,0,0,1)',
+          ],
+          borderRadius: 8,
+          borderSkipped: false
+        }]
+      },
+      options: {
+        maintainAspectRatio: false,
+        plugins: { legend: { display: false } },
+        scales: {
+          x: { ticks: { color: '#aaa' }, grid: { color: '#1e1e1e' } },
+          y: { ticks: { color: '#aaa', callback: v => 'R$' + (v/1000) + 'k' }, grid: { color: '#1e1e1e' } }
+        }
+      }
+    });
+    criarDonut('donut1', 48);
+    criarDonut('donut2', 62);
+  </script>
 
 </body>
-
-<video autoplay muted loop playsinline class="bg-video">
-  <source src="video.mp4" type="video/mp4">
-</video>
-
 </html>
