@@ -3,79 +3,52 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Pixel Ads</title>
+  <title>IP Cursos</title>
 
   <link rel="icon" href="assets/icon.png" type="image/png">
-  <link rel="shortcut icon" href="assets/icon.png" type="image/png">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-  <link rel="stylesheet" href="css/style.css">
 
-  <!-- Open Graph / WhatsApp Preview -->
+  <link rel="stylesheet" href="css/style.css?v=3">
+
+  <!-- Open Graph -->
   <meta property="og:type" content="website">
-  <meta property="og:url" content="https://weslleybns.github.io/pixelads">
-  <meta property="og:title" content="Pixel Ads - Agência de Marketing Digital">
-  <meta property="og:description" content="Levando e qualificando jogadores para sua cidade.">
-  <meta property="og:image" content="https://cdn.discordapp.com/attachments/1266193008064204801/1476779243651469442/banner.png?ex=69a25d58&is=69a10bd8&hm=206349fa35e61b9b8e189f23b4ef191228522708193560335a54d6ce75f601f6">
-  <meta property="og:site_name" content="Pixel Ads">
+  <meta property="og:url" content="https://weslleybns.github.io/clebberfilho">
+  <meta property="og:title" content="IP Cursos">
+  <meta property="og:description" content="Soluções técnicas especializadas para computadores e notebooks.">
+  <meta property="og:image" content="https://weslleybns.github.io/ipcursos/banner.jpg">
+  <meta property="og:site_name" content="IP Cursos">
 
-  <!-- Twitter -->
+  <!-- Twitter Card -->
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="Pixel Ads - Agência de Marketing Digital">
-  <meta name="twitter:description" content="Levando e qualificando jogadores para sua cidade.">
-  <meta name="twitter:image" content="https://cdn.discordapp.com/attachments/1266193008064204801/1476779243651469442/banner.png?ex=69a25d58&is=69a10bd8&hm=206349fa35e61b9b8e189f23b4ef191228522708193560335a54d6ce75f601f6">
+  <meta name="twitter:title" content="IP Cursos">
+  <meta name="twitter:description" content="Soluções técnicas especializadas para computadores e notebooks.">
+  <meta name="twitter:image" content="https://weslleybns.github.io/ipcursos/banner.jpg">
+
+  <!-- No Cache -->
+  <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+  <meta http-equiv="Pragma" content="no-cache">
+  <meta http-equiv="Expires" content="0">
 </head>
 <body>
 
-  <!-- LOADING SCREEN -->
-  <div id="loader">
-    <img src="assets/logo.png" alt="Pixel Ads">
-    <div class="loader-bar"><div class="loader-fill"></div></div>
-  </div>
-
-  <!-- VIDEO DE FUNDO -->
-  <video autoplay muted loop playsinline class="bg-video">
-    <source src="video.mp4" type="video/mp4">
-  </video>
-
   <header>
     <div class="logo">
-      <img src="assets/logo.png" alt="Pixel Ads Logo">
+      <img src="assets/logotipo.png" alt="Logo IP Cursos">
     </div>
     <nav>
-      <a href="planos.html">Planos</a>
-      <a href="termos.html">Termos</a>
-      <a href="#parceiros">Parceiros</a>
+      <a href="#">Empresas</a>
+      <a href="curriculo.html">Currículo</a>
     </nav>
   </header>
-
-  <section class="hero">
-    <h2>Mais jogadores para sua cidade</h2>
-    <p>Fazemos campanhas profissionais para atrair jogadores qualificados e fortalecer sua cidade.</p>
-    <a href="planos.html" class="btn">Ver Planos</a>
-  </section>
-
-  <section class="prova-social">
-    <div class="container">
-      <h2>
-        + de 100 cidades já <br>
-        tomaram essa decisão
-      </h2>
-      <div class="logos">
-        <img src="assets/GUARULHOS.png" alt="Guarulhos">
-        <img src="assets/B.png" alt="Brooken">
-        <img src="assets/SYNER.png" alt="SYNER">
-      </div>
-    </div>
-  </section>
 
   <!-- CONTADORES -->
   <section class="contadores">
     <div class="contador-item">
-      <span class="contador-num" data-target="100">0</span><span class="contador-sufixo">+</span>
+      <span class="contador-num" data-target="32">0</span><span class="contador-sufixo">+</span>
       <p>Cidades atendidas</p>
     </div>
     <div class="contador-item">
-      <span class="contador-num" data-target="500">0</span><span class="contador-sufixo">k+</span>
+      <span class="contador-num" data-target="575">0</span><span class="contador-sufixo">+</span>
       <p>Jogadores alcançados</p>
     </div>
     <div class="contador-item">
@@ -83,100 +56,44 @@
       <p>Clientes satisfeitos</p>
     </div>
     <div class="contador-item">
-      <span class="contador-num" data-target="3">0</span><span class="contador-sufixo"> anos</span>
+      <span class="contador-num" data-target="2">0</span><span class="contador-sufixo"> anos</span>
       <p>de experiência</p>
     </div>
   </section>
 
-  <!-- DASHBOARD -->
-  <section class="dashboard">
-    <div class="dashboard-header">
-      <h2>Análises <span>Recentes</span></h2>
-      <p>Resultados reais das nossas campanhas</p>
-    </div>
-
-    <div class="dashboard-grid">
-
-      <!-- GRÁFICO DE BARRAS -->
-      <div class="dash-card dash-card--double">
-        <div class="dash-card-header">
-          <span class="dash-label">Cidades por Mês</span>
-          <span class="dash-value">47 cidades</span>
-        </div>
-        <div style="position:relative; height:180px; width:100%;">
-          <canvas id="barChart"></canvas>
-        </div>
-
-        <div class="dash-card-header" style="margin-top: 25px;">
-          <span class="dash-label">Campanhas Ativas</span>
-          <span class="dash-value">R$ 12k</span>
-        </div>
-        <div style="position:relative; height:180px; width:100%;">
-          <canvas id="barChart2"></canvas>
-        </div>
-      </div>
-
-      <!-- DONUTS EMPILHADOS -->
-      <div class="donuts-col">
-
-        <div class="dash-card dash-card--donut">
-          <span class="dash-label">Aumento na cidade</span>
-          <div class="donut-wrap">
-            <canvas id="donut1" width="150" height="150"></canvas>
-            <span class="donut-center">48%</span>
-          </div>
-        </div>
-
-        <div class="dash-card dash-card--donut">
-          <span class="dash-label">Jogadores alcançados</span>
-          <div class="donut-wrap">
-            <canvas id="donut2" width="150" height="150"></canvas>
-            <span class="donut-center">62%</span>
-          </div>
-        </div>
-
-      </div>
-
-    </div>
-  </section>
-
-  <!-- INSIGHTS -->
+  <!-- PROGRAMA EMPREGA+ -->
   <section class="insights">
     <div class="insights-header">
-      <h2>Conheça nosso<span> Marketing</span></h2>
-      <p>
-        Seu servidor pode ter os melhores scripts, mapas próprios e
-        sistemas inovadores, mas sem visibilidade, tudo isso fica desperdiçado.
-      </p>
+      <h2>Programa Emprega<span>+</span></h2>
+      <p>Alunos que já estão no mercado de trabalho ou estágio.</p>
     </div>
 
-    <div class="insights-cards">
+    <div class="insights-cards" id="servicos">
+
       <div class="insight-card">
-        <img src="assets/GTA1.jpg" class="insight-img" alt="Estrutura">
+        <img src="alunos/railana.png" class="insight-img" alt="Rayllana Damaceno">
         <div class="insight-content">
-          <div class="meta">Primeiro passo</div>
-          <h3>Estrutura - Análises gerais da sua cidade</h3>
-          <a href="estrutura.html">Saiba Mais</a>
+          <div class="meta">Rayllana Damaceno</div>
+          <h3>Aluna do curso de Operador de Computador participando do Programa de Qualificação Profissionalizante.</h3>
         </div>
       </div>
 
       <div class="insight-card">
-        <img src="assets/gta2.jpg" class="insight-img" alt="Criativos">
+        <img src="alunos/loison.png" class="insight-img" alt="Loilson Costa">
         <div class="insight-content">
-          <div class="meta">Segundo passo</div>
-          <h3>Criativos - Fazemos cinematics para aumentar a conversão</h3>
-          <a href="#">Saiba Mais</a>
+          <div class="meta">Loilson Costa</div>
+          <h3>Aluno do curso de Operador de Computador participando no Programa de Estágio na função de Educador.</h3>
         </div>
       </div>
 
       <div class="insight-card">
-        <img src="assets/GTA3.png" class="insight-img" alt="Operação">
+        <img src="alunos/lucas.png" class="insight-img" alt="Lucas Gabriel">
         <div class="insight-content">
-          <div class="meta">Terceiro passo</div>
-          <h3>Operação - Mais jogadores para sua cidade</h3>
-          <a href="#">Saiba Mais</a>
+          <div class="meta">Lucas Gabriel</div>
+          <h3>Lucas concluiu diversos cursos tanto de informática quanto administrativos.</h3>
         </div>
       </div>
+
     </div>
   </section>
 
@@ -187,47 +104,31 @@
 
       <div class="faq-item">
         <button class="faq-question">
-          O que é a Pixel Ads?
+          O que é a IP Cursos?
           <span>+</span>
         </button>
         <div class="faq-answer">
-          A Pixel Ads é uma agência especializada em marketing voltado para cidades do FiveM, ajudando servidores a crescer e se destacar.
+          A IP Cursos é uma instituição especializada em cursos de informática e qualificação profissional, preparando alunos para o mercado de trabalho.
         </div>
       </div>
 
       <div class="faq-item">
         <button class="faq-question">
-          Por que investir em marketing para uma cidade FiveM?
+          Por que investir em qualificação profissional?
           <span>+</span>
         </button>
         <div class="faq-answer">
-          Porque o marketing certo faz toda a diferença, com campanhas bem
-          direcionadas, sua cidade atrai jogadores ativos e de qualidade, dessa
-          forma fortalecendo o crescimento e o reconhecimento do servidor.
+          A qualificação certa faz toda a diferença no mercado. Com os cursos certos, você atrai melhores oportunidades e se destaca na sua área de atuação.
         </div>
       </div>
 
       <div class="faq-item">
         <button class="faq-question">
-          O que diferencia a Pixel Ads das outras agências?
+          O que diferencia a IP Cursos das outras instituições?
           <span>+</span>
         </button>
         <div class="faq-answer">
-          Nosso diferencial é entender o universo do FiveM a fundo, não fazemos
-          marketing genérico, criamos estratégias personalizadas para cada tipo
-          de cidade (roleplay, academy, etc.)
-        </div>
-      </div>
-
-      <div class="faq-item">
-        <button class="faq-question">
-          Como a Pixel Ads ajuda na qualificação de jogadores?
-          <span>+</span>
-        </button>
-        <div class="faq-answer">
-          Através do Pixel Ads, capacitamos novos jogadores com noções básicas
-          e avançadas de roleplay, melhorando a experiência dentro das cidades.
-          Assim, além de atrair novos jogadores.
+          Nosso diferencial é o Programa Emprega+, que conecta alunos diretamente a oportunidades de estágio e emprego durante o curso.
         </div>
       </div>
 
@@ -237,38 +138,10 @@
           <span>+</span>
         </button>
         <div class="faq-answer">
-          Você escolhe o plano e entra em contato via WhatsApp para darmos início.
+          Você escolhe o curso e entra em contato via WhatsApp para darmos início à sua matrícula.
         </div>
       </div>
 
-    </div>
-  </section>
-
-  <!-- PARCEIROS -->
-  <section id="parceiros" class="parceiros">
-    <div class="parceiros-header">
-      <span class="parceiros-sub">Parcerias Selecionadas</span>
-      <p>Trabalhamos com foco e melhorando nossa visão de crescimento no FiveM</p>
-    </div>
-
-    <div class="parceiros-grid">
-      <div class="parceiro-card">
-        <a href="https://discord.gg/mMATkrXYrK" target="_blank" rel="noopener noreferrer">
-          <img src="assets/ch.png" alt="Parceiro 1">
-        </a>
-      </div>
-
-      <div class="parceiro-card">
-        <a href="https://discord.gg/rQTQ8xzpPw" target="_blank" rel="noopener noreferrer">
-          <img src="assets/hyven.png" alt="Parceiro 2">
-        </a>
-      </div>
-
-      <div class="parceiro-card">
-        <a href="https://pixelads.squareweb.app" target="_blank" rel="noopener noreferrer">
-          <img src="assets/logo.png" alt="Parceiro 3">
-        </a>
-      </div>
     </div>
   </section>
 
@@ -276,24 +149,22 @@
   <footer>
     <div class="footer-social">
       <div class="social-icons">
-        <a href="https://instagram.com/pixeladsgg"><i class="fab fa-instagram"></i></a>
-        <a href="https://tiktok.com/@pixeladsgg"><i class="fab fa-tiktok"></i></a>
-        <a href="https://wa.me/5511955793218"><i class="fab fa-whatsapp"></i></a>
+        <a href="https://instagram.com" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+        <a href="https://wa.me" target="_blank" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
       </div>
     </div>
-    © 2026 Pixel Ads - Todos os direitos reservados
+    © IP Cursos
   </footer>
 
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.min.js"></script>
-  <script src="js/script.js"></script>
-  <script>
-    // LOADING SCREEN
-    window.addEventListener('load', () => {
-      const loader = document.getElementById('loader');
-      setTimeout(() => loader.classList.add('hidden'), 1800);
-    });
+  <!-- WhatsApp Flutuante -->
+  <a href="https://wa.me" target="_blank" class="whatsapp-float" aria-label="Fale conosco no WhatsApp">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="28" height="28" fill="white">
+      <path d="M16 .396C7.163.396 0 7.558 0 16.396c0 2.89.755 5.71 2.192 8.202L0 32l7.6-2.153A15.94 15.94 0 0016 32c8.837 0 16-7.162 16-16S24.837.396 16 .396zm0 29.073a13.02 13.02 0 01-6.636-1.822l-.475-.283-4.508 1.275 1.203-4.393-.309-.453A12.978 12.978 0 013.03 16.396c0-7.157 5.813-12.97 12.97-12.97 7.158 0 12.97 5.813 12.97 12.97 0 7.158-5.812 12.97-12.97 12.97zm7.384-9.787c-.404-.202-2.387-1.177-2.757-1.31-.37-.135-.64-.202-.91.202-.27.404-1.044 1.31-1.28 1.58-.236.27-.472.303-.876.101-.404-.202-1.707-.63-3.252-2.009-1.203-1.072-2.014-2.396-2.25-2.8-.236-.404-.025-.622.177-.823.181-.18.404-.472.606-.707.202-.236.27-.404.404-.674.135-.27.068-.506-.034-.708-.101-.202-.91-2.19-1.246-3.002-.327-.787-.66-.68-.91-.693l-.774-.014c-.27 0-.708.101-1.078.506-.37.404-1.415 1.382-1.415 3.368 0 1.985 1.45 3.904 1.652 4.174.202.27 2.855 4.36 6.914 6.113.966.416 1.72.664 2.308.85.969.308 1.852.265 2.55.161.778-.116 2.387-.976 2.724-1.918.337-.943.337-1.75.236-1.918-.101-.169-.37-.27-.774-.472z"/>
+    </svg>
+  </a>
 
-    // CONTADORES ANIMADOS
+  <script>
+    // Animação dos contadores
     function animarContadores() {
       document.querySelectorAll('.contador-num').forEach(num => {
         const target = +num.dataset.target;
@@ -312,100 +183,19 @@
     }, { threshold: 0.3 });
     contObs.observe(document.querySelector('.contadores'));
 
-    // GRÁFICOS
-    const chartDefaults = {
-      color: '#aaa',
-      plugins: { legend: { display: false } },
-      scales: {
-        x: { ticks: { color: '#aaa' }, grid: { color: '#1e1e1e' } },
-        y: { ticks: { color: '#aaa' }, grid: { color: '#1e1e1e' } }
-      }
-    };
-
-    // BARRAS
-    new Chart(document.getElementById('barChart'), {
-      type: 'bar',
-      data: {
-        labels: ['Jan', 'Fev', 'Mar', 'Abr', 'Mai', 'Jun'],
-        datasets: [{
-          data: [5, 9, 14, 22, 34, 47],
-          backgroundColor: [
-            'rgba(255,0,0,0.3)',
-            'rgba(255,0,0,0.4)',
-            'rgba(255,0,0,0.5)',
-            'rgba(255,0,0,0.6)',
-            'rgba(255,0,0,0.8)',
-            'rgba(255,0,0,1)',
-          ],
-          borderRadius: 8,
-          borderSkipped: false
-        }]
-      },
-      options: {
-        maintainAspectRatio: false,
-        plugins: { legend: { display: false } },
-        scales: {
-          x: { ticks: { color: '#aaa' }, grid: { color: '#1e1e1e' } },
-          y: { ticks: { color: '#aaa' }, grid: { color: '#1e1e1e' } }
-        }
-      }
-    });
-
-    // DONUTS
-    function criarDonut(id, valor) {
-      const canvas = document.getElementById(id);
-      canvas.style.width = '150px';
-      canvas.style.height = '150px';
-      new Chart(canvas, {
-        type: 'doughnut',
-        data: {
-          datasets: [{
-            data: [valor, 100 - valor],
-            backgroundColor: ['#ff0000', '#1e1e1e'],
-            borderWidth: 0,
-            borderRadius: 6
-          }]
-        },
-        options: {
-          cutout: '75%',
-          responsive: false,
-          maintainAspectRatio: false,
-          animation: { duration: 1000 },
-          plugins: { legend: { display: false }, tooltip: { enabled: false } }
-        }
+    // FAQ toggle
+    document.querySelectorAll('.faq-question').forEach(q => {
+      q.addEventListener('click', () => {
+        q.closest('.faq-item').classList.toggle('active');
       });
-    }
-
-    // BARRAS 2
-    new Chart(document.getElementById('barChart2'), {
-      type: 'bar',
-      data: {
-        labels: ['Jan', 'Fev', 'Mar', 'Abr', 'Mai', 'Jun'],
-        datasets: [{
-          data: [1200, 3500, 5800, 7200, 9600, 12000],
-          backgroundColor: [
-            'rgba(255,0,0,0.3)',
-            'rgba(255,0,0,0.4)',
-            'rgba(255,0,0,0.5)',
-            'rgba(255,0,0,0.6)',
-            'rgba(255,0,0,0.8)',
-            'rgba(255,0,0,1)',
-          ],
-          borderRadius: 8,
-          borderSkipped: false
-        }]
-      },
-      options: {
-        maintainAspectRatio: false,
-        plugins: { legend: { display: false } },
-        scales: {
-          x: { ticks: { color: '#aaa' }, grid: { color: '#1e1e1e' } },
-          y: { ticks: { color: '#aaa', callback: v => 'R$' + (v/1000) + 'k' }, grid: { color: '#1e1e1e' } }
-        }
-      }
     });
-    criarDonut('donut1', 48);
-    criarDonut('donut2', 62);
+
+    // WhatsApp com plano (disponível para uso futuro)
+    function whats(plano) {
+      const numero = "5511955793218";
+      const mensagem = `Olá, gostaria de saber mais sobre o plano ${plano}.`;
+      window.open(`https://wa.me/${numero}?text=${encodeURIComponent(mensagem)}`, "_blank");
+    }
   </script>
 
 </body>
